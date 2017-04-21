@@ -1,0 +1,155 @@
+$primary: #D14733;
+$accent: #FFC83B;
+$light: #F6F1E4;
+$dark: #343330;
+
+@import 'partials/work';
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:100,400,700');
+
+body {
+  margin: 0;
+  background: $primary;
+}
+* {
+  font-family: 'Josefin Slab';
+}
+.container {
+  position: absolute;
+  width: 98%;
+  height: 96vh;
+  top: 2vh;
+  left: 1%;
+  background: red;
+  background: url('../images/ribbon.png');
+  background-size: cover;
+  color: $light;
+  // transition: .1s;
+  // &:hover {
+  //   top: 5vh;
+  // }
+  // outline: 1px solid white;
+  .logo {
+    position: absolute;
+    left: 1%;
+    top: 2vh;
+    width: 70px;
+    height: 50px;
+    background: url('../images/logo.png');
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    border: 1px solid $light;
+  }
+  .container-text {
+    position: absolute;
+    left: 13%;
+    top: 15vh;
+    width: 600px;
+    height: 70vh;
+    // outline: 1px solid red;
+    h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    h2 {
+      color: rgba(246,241,228,.7);
+      font-size: 1.5em;
+      font-weight: 100;
+      margin: 0;
+      margin-top: 10px;
+    }
+    p {
+      font-size: 1.5em;
+      font-weight: 100;
+      margin: 0;
+      color: rgba(246,241,228,.6);
+      margin-top: 100px;
+    }
+  }
+}
+.back-container-a {
+  position: absolute;
+  width: 98%;
+  height: 96vh;
+  top: 2vh;
+  left: 1%;
+  // background-image: url('../images/squirrel.jpg');
+  background: url('../images/contact.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 160% 0;
+}
+.back-container-b {
+  position: absolute;
+  width: 98%;
+  height: 96vh;
+  top: 2vh;
+  left: 1%;
+  // background-image: url('../images/squirrel.jpg');
+  background: rgba(255,255,255,.5);
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-position: 160% 0;
+  transition: .2s;
+}
+nav {
+  position: absolute;
+  right: 1%;
+  top: 40vh;
+  // background: white;
+  ul {
+    list-style-type: none;
+    text-align: right;
+    line-height: 70px;
+    li {
+      a {
+        text-decoration: none;
+        color: $primary;
+        font-size: 1.5em;
+        margin: 10px;
+        // font-weight: bold;
+      }
+      &:after {
+        color: $dark;
+        content: "•";
+      }
+      &:last-child:after {
+        content: "";
+      }
+    }
+  }
+}
+
+.work {
+  background: rgba(255,200,200,.5);
+  // background: linear-gradient(rgba(255,200,200,.5),rgba(255,150,150,.5)),url('../images/squirrel.jpg');
+  // background: url('../images/work.jpg');
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-position: 160% 0;
+}
+.about {
+  background: rgba(200,255,200,.5);
+  // background: linear-gradient(rgba(200,255,200,.5),rgba(150,255,150,.5)),url('../images/squirrel.jpg');
+  // background: url('../images/about.jpg');
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-position: 160% 0;
+}
+.contact {
+  background: rgba(200,200,255,.5);
+  // background: linear-gradient(rgba(200,200,255,.5),rgba(150,150,255,.5)),url('../images/squirrel.jpg');
+  // background: url('../images/contact.jpg');
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-position: 160% 0;
+}
+.resume {
+  background: rgba(200,255,255,.5);
+  // background: linear-gradient(rgba(200,255,255,.5),rgba(150,255,255,.5)),url('../images/squirrel.jpg');
+  // background: url('../images/resume.jpg');
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-position: 160% 0;
+}

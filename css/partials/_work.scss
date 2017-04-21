@@ -1,0 +1,200 @@
+.web-work {
+  background: linear-gradient($dark,#4F4D48);
+  .head {
+
+    width: 100%;
+    background: $light;
+    height: 500px;
+    margin-top: 150px;
+    box-shadow: 0px 3px 3px rgba(0,0,0,.4);
+    .head-text {
+      width: 60%;
+      height: 100%;
+      margin: 0 auto;
+      padding-top: 100px;
+      color: $dark;
+      h2 {
+        // margin-top: 300px;
+        font-size: 2em;
+      }
+      p {
+        width: 70%;
+        font-size: 1.5em;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+.ribbon-tab {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: #FFC83B;
+  width: 300px;
+  height: 100px;
+  clip-path: polygon(0% 100%, 25% 0%, 100% 0%, 100% 100%);
+  // box-shadow: 5px 50px 3px rgba(255,255,255,.5);
+  h1 {
+    text-align: right;
+    margin: 0;
+    margin-top: 37px;
+    margin-right: 40px;
+  }
+}
+
+.piece {
+  background: $light;
+  width: 80%;
+  height: 400px;
+  margin: 100px auto;
+  position:relative;
+  box-shadow: 0px 3px 3px rgba(0,0,0,.3);
+  transition: 1s;
+  &:hover {
+    background: #FFFCF7;
+  }
+  .color1, .color2, .color3, .color4, .color5 {
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    right:60px;
+    background: #000;
+    border-radius: 0px 0px 5px 5px;
+    transition: .1s;
+    &:hover {
+      height: 110px;
+    }
+  }
+  .color2 {
+    right: 120px;
+    background: #403D39;
+  }
+  .color3 {
+    right: 180px;
+    background: #DB6639;
+  }
+  .color4 {
+    right: 240px;
+    background: #EDB29C;
+  }
+  .color5 {
+    right: 300px;
+    background: #EFECE3;
+  }
+  .phone, .ipad, .desktop {
+    // background: #EFECE3;
+
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 100px;
+    height: 300px;
+    opacity: 1;
+    transition: .2s;
+    border-radius: 4px;
+  }
+  .phone {
+    background: url('../images/nonprofit-mobile.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .ipad {
+    left: 140px;
+    // top: 300px;
+    width: 150px;
+    height: 200px;
+    background: url('../images/nonprofit-ipad.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  .desktop {
+    left: 310px;
+    width: 200px;
+    height: 150px;
+    background: url('../images/nonprofit-desktop.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .description {
+    position: absolute;
+    right: 60px;
+    top: 100px;
+    width: 40%;
+    text-align: right;
+    color: $dark;
+    p {
+      font-size: 1.2em;
+      line-height: 30px;
+    }
+  }
+  .expand {
+    // background: $dark;
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    h1 {
+      text-align: center;
+      color: rgba(0,0,0,1);
+      margin: 0;
+      font-size: 1em;
+      transition: .3s;
+      cursor: default;
+      &:hover {
+        color: rgba(0,0,0,.5);
+      }
+    }
+    // right: 0px;
+  }
+}
+.expanded {
+  height: 1000px;
+}
+.gone {
+  // opacity: .1;
+  // height: 0px;
+  display: none;
+}
+
+#work2 {
+  .color1 {
+    background: #464655;
+  }
+  .color2 {
+    background: #94958B;
+  }
+  .color3 {
+    background: #C6C6C4;
+  }
+  .color4 {
+    background: #E1D8C3;
+  }
+  .color5 {
+    background: #F4EEDE;
+  }
+  .phone, .ipad, .desktop{
+    background: #533A71;
+  }
+  .phone {
+    background: url('../images/goodreads-mobile.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    // width: 120px;
+  }
+  .ipad {
+    background: url('../images/goodreads-ipad.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    // width: 170px;
+  }
+  .desktop {
+    background: url('../images/goodreads-desktop.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}

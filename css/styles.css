@@ -1,0 +1,258 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Josefin+Slab:100,400,700");
+.web-work {
+  background: linear-gradient(#343330, #4F4D48); }
+  .web-work .head {
+    width: 100%;
+    background: #F6F1E4;
+    height: 500px;
+    margin-top: 150px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4); }
+    .web-work .head .head-text {
+      width: 60%;
+      height: 100%;
+      margin: 0 auto;
+      padding-top: 100px;
+      color: #343330; }
+      .web-work .head .head-text h2 {
+        font-size: 2em; }
+      .web-work .head .head-text p {
+        width: 70%;
+        font-size: 1.5em;
+        line-height: 30px; }
+
+.ribbon-tab {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: #FFC83B;
+  width: 300px;
+  height: 100px;
+  clip-path: polygon(0% 100%, 25% 0%, 100% 0%, 100% 100%); }
+  .ribbon-tab h1 {
+    text-align: right;
+    margin: 0;
+    margin-top: 37px;
+    margin-right: 40px; }
+
+.piece {
+  background: #F6F1E4;
+  width: 80%;
+  height: 400px;
+  margin: 100px auto;
+  position: relative;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+  transition: 1s; }
+  .piece:hover {
+    background: #FFFCF7; }
+  .piece .color1, .piece .color2, .piece .color3, .piece .color4, .piece .color5 {
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    right: 60px;
+    background: #000;
+    border-radius: 0px 0px 5px 5px;
+    transition: .1s; }
+    .piece .color1:hover, .piece .color2:hover, .piece .color3:hover, .piece .color4:hover, .piece .color5:hover {
+      height: 110px; }
+  .piece .color2 {
+    right: 120px;
+    background: #403D39; }
+  .piece .color3 {
+    right: 180px;
+    background: #DB6639; }
+  .piece .color4 {
+    right: 240px;
+    background: #EDB29C; }
+  .piece .color5 {
+    right: 300px;
+    background: #EFECE3; }
+  .piece .phone, .piece .ipad, .piece .desktop {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 100px;
+    height: 300px;
+    opacity: 1;
+    transition: .2s;
+    border-radius: 4px; }
+  .piece .phone {
+    background: url("../images/nonprofit-mobile.png");
+    background-size: 100%;
+    background-repeat: no-repeat; }
+  .piece .ipad {
+    left: 140px;
+    width: 150px;
+    height: 200px;
+    background: url("../images/nonprofit-ipad.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top; }
+  .piece .desktop {
+    left: 310px;
+    width: 200px;
+    height: 150px;
+    background: url("../images/nonprofit-desktop.png");
+    background-size: 100%;
+    background-repeat: no-repeat; }
+  .piece .description {
+    position: absolute;
+    right: 60px;
+    top: 100px;
+    width: 40%;
+    text-align: right;
+    color: #343330; }
+    .piece .description p {
+      font-size: 1.2em;
+      line-height: 30px; }
+  .piece .expand {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%); }
+    .piece .expand h1 {
+      text-align: center;
+      color: black;
+      margin: 0;
+      font-size: 1em;
+      transition: .3s;
+      cursor: default; }
+      .piece .expand h1:hover {
+        color: rgba(0, 0, 0, 0.5); }
+
+.expanded {
+  height: 1000px; }
+
+.gone {
+  display: none; }
+
+#work2 .color1 {
+  background: #464655; }
+#work2 .color2 {
+  background: #94958B; }
+#work2 .color3 {
+  background: #C6C6C4; }
+#work2 .color4 {
+  background: #E1D8C3; }
+#work2 .color5 {
+  background: #F4EEDE; }
+#work2 .phone, #work2 .ipad, #work2 .desktop {
+  background: #533A71; }
+#work2 .phone {
+  background: url("../images/goodreads-mobile.png");
+  background-size: 100%;
+  background-repeat: no-repeat; }
+#work2 .ipad {
+  background: url("../images/goodreads-ipad.png");
+  background-size: 100%;
+  background-repeat: no-repeat; }
+#work2 .desktop {
+  background: url("../images/goodreads-desktop.png");
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+body {
+  margin: 0;
+  background: #D14733; }
+
+* {
+  font-family: 'Josefin Slab'; }
+
+.container {
+  position: absolute;
+  width: 98%;
+  height: 96vh;
+  top: 2vh;
+  left: 1%;
+  background: red;
+  background: url("../images/ribbon.png");
+  background-size: cover;
+  color: #F6F1E4; }
+  .container .logo {
+    position: absolute;
+    left: 1%;
+    top: 2vh;
+    width: 70px;
+    height: 50px;
+    background: url("../images/logo.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    border: 1px solid #F6F1E4; }
+  .container .container-text {
+    position: absolute;
+    left: 13%;
+    top: 15vh;
+    width: 600px;
+    height: 70vh; }
+    .container .container-text h1 {
+      font-size: 3em;
+      margin: 0; }
+    .container .container-text h2 {
+      color: rgba(246, 241, 228, 0.7);
+      font-size: 1.5em;
+      font-weight: 100;
+      margin: 0;
+      margin-top: 10px; }
+    .container .container-text p {
+      font-size: 1.5em;
+      font-weight: 100;
+      margin: 0;
+      color: rgba(246, 241, 228, 0.6);
+      margin-top: 100px; }
+
+.back-container-a {
+  position: absolute;
+  width: 98%;
+  height: 96vh;
+  top: 2vh;
+  left: 1%;
+  background: url("../images/contact.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 160% 0; }
+
+.back-container-b {
+  position: absolute;
+  width: 98%;
+  height: 96vh;
+  top: 2vh;
+  left: 1%;
+  background: rgba(255, 255, 255, 0.5);
+  transition: .2s; }
+
+nav {
+  position: absolute;
+  right: 1%;
+  top: 40vh; }
+  nav ul {
+    list-style-type: none;
+    text-align: right;
+    line-height: 70px; }
+    nav ul li a {
+      text-decoration: none;
+      color: #D14733;
+      font-size: 1.5em;
+      margin: 10px; }
+    nav ul li:after {
+      color: #343330;
+      content: "•"; }
+    nav ul li:last-child:after {
+      content: ""; }
+
+.work {
+  background: rgba(255, 200, 200, 0.5); }
+
+.about {
+  background: rgba(200, 255, 200, 0.5); }
+
+.contact {
+  background: rgba(200, 200, 255, 0.5); }
+
+.resume {
+  background: rgba(200, 255, 255, 0.5); }
+
+/*# sourceMappingURL=styles.css.map */
